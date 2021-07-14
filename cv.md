@@ -29,3 +29,23 @@ HTML, CSS, JavaScript, TypeScript, Node.js, Express.js, Git, SQL
 		return asImage;
 	}
 ```
+* **Work Experience:**
+
+| POSITION: | PLACE OF WORK: | PERIOD: | 
+| ----------- | ----------- | ----------- |
+| Back-End Web Developer | LLC "Nika", Russia | May 2021 - Now |
+| Court Clerk | District Court of The Industrial District of Samara, Russia | August 2020 - January 2021 |
+| Food & Beverage Associate | Kings Island, USA | May 2019 - September 2019 |
+
+* **Education:**
+
+| SPECIALIZATION: | PLACE OF STUDY: | PERIOD: | 
+| ----------- | ----------- | ----------- |
+| Front-End Web Development | Rolling Scopes School | July 2021 - Now |
+| Full-Stack Web Development | JavaScript + Node.js + Vue.js in Real Projects, Udemy | March 2021 - June 2021 |
+| Full-Stack Web Development | The Complete 2021 Web-Development Bootcamp, Udemy | January 2021 - April 2021 |
+| Faculty of Law | Samara University | September 2016 - July 2020 |
+
+* **English Level:** 
+I think that my English level is B2. 
+I took part in "Work & Travel USA", so I lived and worked in the USA from May to September 2019. I got to know many international students and US citizens! I had a lot of speaking practice and I hadn't got any problems with understanding out there.
