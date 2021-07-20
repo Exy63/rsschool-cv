@@ -16,6 +16,10 @@ h1 {
   color: #66bfbf;
 }
 
+h2 {
+    color: #66bfbf;
+  }
+
 .profile-image {
   position: absolute;
   top: 1em;
@@ -51,18 +55,48 @@ h1 {
 }
 
 .education-content {
-    position: relative;
-    left: 27%;
-    text-align: left;
-  }
+  position: relative;
+  left: 27%;
+  text-align: left;
+}
 th {
   text-align: center;
 }
 
 .english-level-content {
-    line-height: 10px;
-  }
+  line-height: 10px;
+}
 
 .pro {
   text-decoration: underline;
+}
+
+.footer-container {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  height: 100px;
+  background-color: #66bfbf;
+}
+.rs-school-logo {
+  width: 170px;
+}
+
+.github-logo {
+  width: 170px;
+}
+
+.footer-left {
+  margin-top: 8px;
+  text-align: left;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.footer-right {
+  margin-top: 8px;
+  text-align: right;
+  float: left;
+  width: 50%;
+  height: 100%;
 }
