@@ -59,6 +59,10 @@ th {
   text-align: center;
 }
 
+.english-level-content {
+    line-height: 10px;
+  }
+
 .pro {
   text-decoration: underline;
 }
