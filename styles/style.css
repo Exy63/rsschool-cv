@@ -1,0 +1,21 @@
+body {
+    margin: 0 auto;
+}
+.profile-image {
+    position:absolute;
+    top: 1em;
+    left: 1.5em;
+}
+
+.name-and-bio {
+    margin: 3.7em auto; 
+    text-align: center
+}
+
+.contact-info {
+    position:absolute;
+    top: 2.7em;
+    right: 1.5em;
+    line-height: 10px;
+    text-align: right;
+}
