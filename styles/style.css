@@ -38,6 +38,11 @@ hr {
 .about-me-content {
     line-height: 10px;
 }
+.my-code-content {
+    position: absolute;
+    left: 25%;
+    text-align: left;
+}
 
 .pro {
     text-decoration: underline;
