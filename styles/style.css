@@ -44,6 +44,15 @@ hr {
     text-align: left;
 }
 
+.work-experience-content {
+    position: relative;
+    left: 27.5%;
+    text-align: left;
+}
+.work-experience-th {
+    text-align: center;
+}
+
 .pro {
     text-decoration: underline;
 }
