@@ -5,16 +5,16 @@ body {
 }
 
 hr {
-    margin: 30px auto;
-    border-style: dotted none none;
-    border-color: grey;
-    border-width: 5px;
-    width: 5%;
-  }
+  margin: 30px auto;
+  border-style: dotted none none;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+}
 
-  h1 {
-    color: #66bfbf;
-  }
+h1 {
+  color: #66bfbf;
+}
 
 .profile-image {
   position: absolute;
@@ -36,23 +36,29 @@ hr {
 }
 
 .about-me-content {
-    line-height: 10px;
+  line-height: 10px;
 }
 .my-code-content {
-    position: relative;
-    left: 25%;
-    text-align: left;
+  position: relative;
+  left: 25%;
+  text-align: left;
 }
 
 .work-experience-content {
-    position: relative;
-    left: 27.5%;
-    text-align: left;
+  position: relative;
+  left: 27.5%;
+  text-align: left;
 }
-.work-experience-th {
-    text-align: center;
+
+.education-content {
+    position: relative;
+    left: 27%;
+    text-align: left;
+  }
+th {
+  text-align: center;
 }
 
 .pro {
-    text-decoration: underline;
+  text-decoration: underline;
 }
