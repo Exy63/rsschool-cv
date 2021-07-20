@@ -1,21 +1,43 @@
 body {
-    margin: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #eaf6f6;
 }
+
+hr {
+    border-style: dotted none none;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+  }
+
+  h1 {
+    color: #66bfbf;
+  }
+
 .profile-image {
-    position:absolute;
-    top: 1em;
-    left: 1.5em;
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
 }
 
 .name-and-bio {
-    margin: 3.7em auto; 
-    text-align: center
+  margin: 3.7em auto;
+  text-align: center;
 }
 
 .contact-info {
-    position:absolute;
-    top: 2.7em;
-    right: 1.5em;
+  position: absolute;
+  top: 2.7em;
+  right: 1.5em;
+  line-height: 10px;
+  text-align: right;
+}
+
+.about-me-content {
     line-height: 10px;
-    text-align: right;
+}
+
+.pro {
+    text-decoration: underline;
 }
