@@ -39,7 +39,7 @@ hr {
     line-height: 10px;
 }
 .my-code-content {
-    position: absolute;
+    position: relative;
     left: 25%;
     text-align: left;
 }
