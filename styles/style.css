@@ -1,102 +1,120 @@
+/* global */
+
 body {
   margin: 0 auto;
   text-align: center;
   background-color: #eaf6f6;
 }
 
-hr {
-  margin: 30px auto;
-  border-style: dotted none none;
-  border-color: grey;
-  border-width: 5px;
-  width: 5%;
-}
-
-h1 {
+h2 {
   color: #66bfbf;
 }
 
-h2 {
-    color: #66bfbf;
-  }
+hr {
+  width: 5%;
+  margin: 30px auto;
+  border-style: dotted none none;
+  border-color: #707070;
+  border-width: 5px;
+}
 
-.profile-image {
-  position: absolute;
-  top: 1em;
-  left: 1.5em;
+th {
+  text-align: center;
+}
+
+
+/* header */
+
+.header-container {
+  height: 210px;
+  background-color: #66bfbf;
+}
+
+.header-box {
+  display: inline-block;
+  width: 32%;
+}
+
+.profile-picture {
+  margin-top: 17px;
 }
 
 .name-and-bio {
-  margin: 3.7em auto;
   text-align: center;
 }
 
 .contact-info {
-  position: absolute;
-  top: 2.7em;
-  right: 1.5em;
   line-height: 10px;
   text-align: right;
+}
+
+
+/* about me */
+
+.about-me-section {
+  margin-top: 30px;
 }
 
 .about-me-content {
   line-height: 10px;
 }
+
+.pro-decoration {
+  text-decoration: underline;
+}
+
+
+/* example of my code */
+
 .my-code-content {
-  position: relative;
-  left: 25%;
+  width: 900px;
+  margin: auto;
   text-align: left;
 }
+
+
+/* work experience */
 
 .work-experience-content {
-  position: relative;
-  left: 27.5%;
-  text-align: left;
+  width: 860px;
+  margin: auto;
 }
 
+
+/* education */
+
 .education-content {
-  position: relative;
-  left: 27%;
-  text-align: left;
+  width: 880px;
+  margin: auto;
 }
-th {
-  text-align: center;
-}
+
+
+/* english level */
 
 .english-level-content {
   line-height: 10px;
 }
 
-.pro {
-  text-decoration: underline;
-}
+
+/* footer */
 
 .footer-container {
-  margin-top: 40px;
-  padding-bottom: 20px;
   height: 100px;
+  margin-top: 45px;
+  padding-bottom: 33px;
   background-color: #66bfbf;
 }
-.rs-school-logo {
-  width: 170px;
-}
 
-.github-logo {
-  width: 170px;
+.footer-part {
+  float: left;
+  width: 48.7%;
+  margin: 8px 1px 0 12px;
 }
 
 .footer-left {
-  margin-top: 8px;
   text-align: left;
-  float: left;
-  width: 50%;
-  height: 100%;
 }
 
 .footer-right {
-  margin-top: 8px;
   text-align: right;
-  float: left;
-  width: 50%;
-  height: 100%;
 }
