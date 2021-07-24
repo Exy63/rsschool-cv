@@ -7,6 +7,7 @@ body {
 }
 
 h2 {
+  margin-bottom: 30px;
   color: #66bfbf;
 }
 
@@ -23,6 +24,7 @@ th {
 }
 
 table {
+  margin-top: -30px;
   border-spacing: 30px; 
 }
 
