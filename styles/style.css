@@ -7,6 +7,10 @@ body {
   background-color: #eaf6f6;
 }
 
+li {
+  list-style: none;
+}
+
 h2 {
   margin-bottom: 30px;
   color: #66bfbf;
