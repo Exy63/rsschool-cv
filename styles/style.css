@@ -2,8 +2,13 @@
 
 body {
   margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: #eaf6f6;
+}
+
+li {
+  list-style: none;
 }
 
 h2 {
@@ -28,8 +33,14 @@ th {
 }
 
 table {
+  width: 1000px;
   margin-top: -25px;
-  border-spacing: 30px; 
+  border-spacing: 35px;
+}
+
+.div-with-table {
+  width: 1000px;
+  margin: auto;
 }
 
 
@@ -59,6 +70,13 @@ table {
 }
 
 
+/* article */
+
+.article-name {
+  font-size: 50px;
+}
+
+
 /* about me */
 
 .about-me-section {
@@ -80,22 +98,6 @@ table {
   width: 900px;
   margin: auto;
   text-align: left;
-}
-
-
-/* work experience */
-
-.work-experience-content {
-  width: 860px;
-  margin: auto;
-}
-
-
-/* education */
-
-.education-content {
-  width: 880px;
-  margin: auto;
 }
 
 
