@@ -1,0 +1,130 @@
+/* global */
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #eaf6f6;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #66bfbf;
+}
+
+hr {
+  width: 5%;
+  margin: 30px auto;
+  border-style: dotted none none;
+  border-color: #707070;
+  border-width: 5px;
+}
+
+pre {
+  margin-top: -15px;
+}
+
+th {
+  text-align: center;
+}
+
+table {
+  margin-top: -25px;
+  border-spacing: 30px; 
+}
+
+
+/* header */
+
+.header-container {
+  height: 210px;
+  background-color: #66bfbf;
+}
+
+.header-box {
+  display: inline-block;
+  width: 32%;
+}
+
+.profile-picture {
+  margin-top: 17px;
+}
+
+.name-and-bio {
+  text-align: center;
+}
+
+.contact-info {
+  line-height: 10px;
+  text-align: right;
+}
+
+
+/* about me */
+
+.about-me-section {
+  margin-top: 30px;
+}
+
+.about-me-content {
+  line-height: 10px;
+}
+
+.pro-decoration {
+  text-decoration: underline;
+}
+
+
+/* example of my code */
+
+.my-code-content {
+  width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+
+/* work experience */
+
+.work-experience-content {
+  width: 860px;
+  margin: auto;
+}
+
+
+/* education */
+
+.education-content {
+  width: 880px;
+  margin: auto;
+}
+
+
+/* english level */
+
+.english-level-content {
+  line-height: 10px;
+}
+
+
+/* footer */
+
+.footer-container {
+  height: 100px;
+  margin-top: 45px;
+  padding-bottom: 33px;
+  background-color: #66bfbf;
+}
+
+.footer-part {
+  float: left;
+  width: 48.7%;
+  margin: 8px 1px 0 12px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}

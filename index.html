@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CV | Ilya Prikazchikov </title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="profile-image header-box">
+        <img class="profile-picture" src="images/Ilya.png" alt="Ilya's profile picture" />
+      </div>
+      <div class="name-and-bio header-box">
+        <h1 class="name">Ilya Prikazchikov</h1>
+        <p class="bio">
+          <em> The <strong>Rising Star</strong> of Web Development</em>
+        </p>
+      </div>
+      <div class="contact-info header-box">
+        <h3>Contact info:</h3>
+          <p>email: ilyaprikaz@gmail.com</p>
+          <p>telegram: @ilyaprikazchikov</p>
+      </div>
+    </div>
+  </header>
+  <section class="about-me-section">
+    <h2 class="about-me-title">About Me:</h2>
+    <div class="about-me-content">
+      <p>I'm the <strong class="pro-decoration">pro</strong>grammer you're looking for!</p>
+      <p>My goal is to become a <em>Gold Star of Web-Development</em> and I'm really focused on it!</p>
+      <p>So if one day you come across a web-site or an app that works and looks perfectly you can be sure it was made
+        by <strong>me!</strong></p>
+    </div>
+  </section>
+  <hr>
+  <section class="my-skills-section">
+    <h2 class="my-skills-title">My Skills:</h2>
+    <div class="my-skills-content">
+      <p>HTML, CSS, JavaScript, TypeScript, Node.js, Express.js, Git, SQL</p>
+    </div>
+  </section>
+  <hr>
+  <section class="my-code-section">
+    <h2 class="my-code-title">Example of My Code:</h2>
+    <div class="my-code-content">
+      <pre><code>
+            public async getImgByProductID(idProduct: number): Promise &lt;string[]&gt; {
+                let asImage: string[] = null;
+                try {
+                    const avImage = await this.db(${ItemE.NAME})
+                        .leftJoin(`${S3ItemImgE.NAME}`, `${ItemE.NAME}.item_id`, `${S3ItemImgE.NAME}.item_id`)
+                        .leftJoin(`${S3ItemFileE.NAME}`, `${S3ItemImgE.NAME}.s3_item_file_id`, `${S3ItemFileE.NAME}.id`)
+                        .where(`${ItemE.NAME}.product_id`, idProduct)
+                        .whereNotNull(`${S3ItemFileE.NAME}.source_url`)
+                        .distinct({ url: `${S3ItemFileE.NAME}.source_url` });
+                    // Array of Objects => Array of Strings
+                    asImage = avImage.map((el) => String(el.url));
+                } catch (e) {
+                    this.errorSys.errorEx(e, 'ProductSQL.getImgByProductID', 'Could not get any images by requested data');
+                }
+                return asImage;
+            }</code></pre>
+    </div>
+  </section>
+  <hr>
+  <section class="work-experience-section">
+    <h2 class="work-experience-title">Work Experience:</h2>
+    <div class="work-experience-content">
+      <table>
+        <tr>
+          <th>
+            POSITION:
+          </th>
+          <th>
+            PLACE OF WORK:
+          </th>
+          <th>
+            PERIOD:
+          </th>
+        </tr>
+        <tr>
+          <td>Back-End Web Developer</td>
+          <td>LLC "Nika", Russia</td>
+          <td>May 2021 - Now</td>
+        </tr>
+        <tr>
+          <td>Court Clerk</td>
+          <td>District Court of The Industrial District of Samara, Russia</td>
+          <td>August 2020 - January 2021</td>
+        </tr>
+        <tr>
+          <td>Food & Beverage Associate</td>
+          <td>Kings Island, USA</td>
+          <td>May 2019 - September 2019</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <hr>
+  <section class="education-section">
+    <h2 class="education-title">Education:</h2>
+    <div class="education-content">
+      <table>
+        <tr>
+          <th>
+            SPECIALIZATION:
+          </th>
+          <th>
+            PLACE OF STUDY:
+          </th>
+          <th>
+            PERIOD:
+          </th>
+        </tr>
+        <tr>
+          <td>Front-End Web Development</td>
+          <td>Rolling Scopes School</td>
+          <td>July 2021 - Now</td>
+        </tr>
+        <tr>
+          <td>Full-Stack Web Development</td>
+          <td>JavaScript + Node.js + Vue.js in Real Projects, Udemy</td>
+          <td>March 2021 - June 2021</td>
+        </tr>
+        <tr>
+          <td>Full-Stack Web Development</td>
+          <td>The Complete 2021 Web-Development Bootcamp, Udemy</td>
+          <td>January 2021 - April 2021</td>
+        </tr>
+        <tr>
+          <td>Faculty of Law</td>
+          <td>Samara University</td>
+          <td>September 2016 - July 2020</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <hr>
+  <section class="english-level-section">
+    <h2 class="english-level-title">English Level:</h2>
+    <div class="english-level-content">
+      <p>I think that my English level is <strong>B2</strong>. </p>
+      <p>I took part in "Work & Travel USA", so I lived and worked in the USA from May to September 2019.</p>
+      <p>I got to know many international students and US citizens! I had a lot of speaking practice and I hadn't got
+        any problems with understanding out there.</p>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-part footer-left">
+        <img class="rs-school-logo" src="images/rs_school_js.svg" alt="rs-school-logo" width="170" height="70">
+
+        <a href="https://rs.school/js/">
+          <p>RS School Course</p>
+        </a>
+      </div>
+      <div class="footer-part footer-right">
+        <a href="https://github.com/Exy63">
+          <img class="github-logo" src="images/github-logo.png" alt="me on github" width="190" height="70">
+        </a>
+        <p>2021</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
