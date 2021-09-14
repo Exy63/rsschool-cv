@@ -12,10 +12,17 @@ li {
   list-style: none;
 }
 
+h1, h2, h3 {
+  font-family: Manrope;
+}
+
+p, li, th, td {
+  font-family: Roboto;
+}
+
 h2 {
   margin-bottom: 30px;
-  color: #66bfbf;
-  
+  color: #66bfbf; 
 }
 
 hr {
@@ -49,16 +56,16 @@ table {
 /* header */
 
 .header-container {
-  height: 210px;
+  height: 230px;
   background-color: #66bfbf;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-
 }
 
 .header-box {
   display: inline-block;
   width: 32%;
 }
+
 
 .profile-picture {
   margin-top: 17px;
@@ -135,4 +142,17 @@ table {
 
 .footer-right {
   text-align: right;
+}
+
+/* fonts */
+@font-face {
+	font-family: "Manrope";
+	src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
 }
