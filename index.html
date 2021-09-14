@@ -76,15 +76,16 @@
           <h2 class="my-code-title">Example of My Code:</h2>
           <div class="my-code-content">
             <pre><code>
-            public async getImgByProductID(idProduct: number): Promise &lt;string[]&gt; {
+            public async getImgByProductID(idProduct: number): Promise&lt;string[]&gt; {
                 let asImage: string[] = null;
                 try {
-                    const avImage = await this.db(${ItemE.NAME})
-                        .leftJoin(`${S3ItemImgE.NAME}`, `${ItemE.NAME}.item_id`, `${S3ItemImgE.NAME}.item_id`)
-                        .leftJoin(`${S3ItemFileE.NAME}`, `${S3ItemImgE.NAME}.s3_item_file_id`, `${S3ItemFileE.NAME}.id`)
-                        .where(`${ItemE.NAME}.product_id`, idProduct)
-                        .whereNotNull(`${S3ItemFileE.NAME}.source_url`)
-                        .distinct({ url: `${S3ItemFileE.NAME}.source_url` });
+                    const avImage = await this.db({i: ItemE.NAME})
+                        .leftJoin({sii: S3ItemImgE.NAME}, 'i.item_id', 'sii.item_id')
+                        .leftJoin({sif: S3ItemFileE.NAME}, 'sii.s3_item_file_id', 'sif.id')
+                        .where('i.product_id', idProduct)
+                        .andWhereNotNull('sif.source_url')
+                        .distinct({ url: 'sif.source_url' });
+
                     // Array of Objects => Array of Strings
                     asImage = avImage.map((el) => String(el.url));
                 } catch (e) {
