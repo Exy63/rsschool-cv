@@ -5,6 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: #eaf6f6;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 li {
@@ -14,6 +15,7 @@ li {
 h2 {
   margin-bottom: 30px;
   color: #66bfbf;
+  
 }
 
 hr {
@@ -49,6 +51,8 @@ table {
 .header-container {
   height: 210px;
   background-color: #66bfbf;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+
 }
 
 .header-box {
@@ -104,7 +108,7 @@ table {
 /* english level */
 
 .english-level-content {
-  line-height: 10px;
+  line-height: 20px;
 }
 
 
@@ -115,6 +119,8 @@ table {
   margin-top: 45px;
   padding-bottom: 33px;
   background-color: #66bfbf;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+
 }
 
 .footer-part {
