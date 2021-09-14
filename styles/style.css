@@ -52,6 +52,11 @@ table {
   margin: auto;
 }
 
+#code {
+  background-color: #eaf6f6;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
 
 /* header */
 
