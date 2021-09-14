@@ -27,7 +27,7 @@ h2 {
 
 hr {
   width: 5%;
-  margin: 30px auto;
+  margin: 50px auto;
   border-style: dotted none none;
   border-color: #707070;
   border-width: 5px;
@@ -106,7 +106,6 @@ table {
 
 .skills-1, .skills-2, .skills-3 {
   display: inline-block;
-  /* margin-left: 30px; */
   margin-right: 30px;
   width: 150px;
 }
@@ -125,6 +124,7 @@ table {
 
 .english-level-content {
   line-height: 20px;
+  margin-bottom: 50px;
 }
 
 
