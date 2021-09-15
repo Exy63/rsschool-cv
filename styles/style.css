@@ -30,6 +30,7 @@ td {
 }
 
 h2 {
+  font-size: 1.6vw;
   margin-bottom: 30px;
   color: #66bfbf;
 }
@@ -88,6 +89,7 @@ table {
 }
 
 .contact-info {
+  font-family: Manrope;
   line-height: 10px;
   text-align: right;
 }
@@ -105,7 +107,10 @@ h1 {
 }
 
 .about-me-content {
-  line-height: 10px;
+  line-height: 15px;
+  font-size: 1.2vw;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .pro-decoration {
@@ -137,8 +142,11 @@ h1 {
 /* english level */
 
 .english-level-content {
-  line-height: 20px;
-  margin-bottom: 50px;
+  line-height: 15px;
+  font-size: 1.2vw;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
 }
 
 /* footer */
