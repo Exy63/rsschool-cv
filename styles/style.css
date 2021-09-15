@@ -30,7 +30,7 @@ td {
 }
 
 h2 {
-  font-size: 1.6vw;
+  font-size: 1.7vw;
   margin-bottom: 30px;
   color: #66bfbf;
 }
@@ -152,25 +152,22 @@ h1 {
 /* footer */
 
 .footer-container {
-  height: 100px;
+  height: 133px;
   margin-top: 45px;
-  padding-bottom: 33px;
   background-color: #66bfbf;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  display: flex;
 }
 
-.footer-part {
-  float: left;
-  width: 48.7%;
-  margin: 8px 1px 0 12px;
+.footer-block {
+  max-width: 300px;
+  margin: auto;
 }
 
-.footer-left {
-  text-align: left;
-}
-
-.footer-right {
-  text-align: right;
+.year {
+  width: 90px;
+  margin: auto;
+  font-size: 17px;
 }
 
 /* fonts */
