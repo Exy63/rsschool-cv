@@ -12,17 +12,22 @@ li {
   list-style: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Manrope;
 }
 
-p, li, th, td {
+p,
+li,
+th,
+td {
   font-family: Roboto;
 }
 
 h2 {
   margin-bottom: 30px;
-  color: #66bfbf; 
+  color: #66bfbf;
 }
 
 hr {
@@ -57,7 +62,6 @@ table {
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
-
 /* header */
 
 .header-container {
@@ -70,7 +74,6 @@ table {
   display: inline-block;
   width: 32%;
 }
-
 
 .profile-picture {
   margin-top: 17px;
@@ -85,13 +88,11 @@ table {
   text-align: right;
 }
 
-
 /* article */
 
 h1 {
   font-size: 50px;
 }
-
 
 /* about me */
 
@@ -109,12 +110,17 @@ h1 {
 
 /* my skills */
 
-.skills-1, .skills-2, .skills-3 {
+.skills-1,
+.skills-2,
+.skills-3 {
   display: inline-block;
   margin-right: 30px;
   width: 150px;
 }
 
+.skill {
+  margin-top: 7px;
+}
 
 /* example of my code */
 
@@ -124,14 +130,12 @@ h1 {
   text-align: left;
 }
 
-
 /* english level */
 
 .english-level-content {
   line-height: 20px;
   margin-bottom: 50px;
 }
-
 
 /* footer */
 
@@ -141,7 +145,6 @@ h1 {
   padding-bottom: 33px;
   background-color: #66bfbf;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-
 }
 
 .footer-part {
@@ -160,13 +163,13 @@ h1 {
 
 /* fonts */
 @font-face {
-	font-family: "Manrope";
-	src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
-	font-weight: normal;
+  font-family: "Manrope";
+  src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
-	font-family: "Roboto";
-	src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
-	font-weight: normal;
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
 }
