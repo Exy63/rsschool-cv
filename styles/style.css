@@ -139,6 +139,29 @@ h1 {
   text-align: left;
 }
 
+/* My projects */
+
+.projects-card-collection {
+  margin: 0;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
+}
+
+.project-card {
+  width: 20%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.project-image {
+  width: 100%;
+}
+
 /* english level */
 
 .english-level-content {
