@@ -1,5 +1,9 @@
 /* global */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +46,6 @@ h5 {
 h6 {
   margin-top: 3%;
   margin-bottom: 1%;
-
 }
 
 hr {
@@ -99,9 +102,111 @@ table {
 }
 
 .contact-info {
-  font-family: Manrope;
   line-height: 10px;
   text-align: right;
+}
+
+.contact-info li {
+  font-family: Manrope;
+}
+
+/* burger menu */
+
+.bm-button {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  top: 75px;
+  left: 2%;
+  z-index: 5;
+  border-radius: 50%;
+  background-color: #707070;
+}
+
+.bm-lines,
+.bm-lines::after,
+.bm-lines::before {
+  position: absolute;
+  width: 46%;
+  height: 4px;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.bm-lines {
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.bm-lines::before {
+  content: "";
+  width: 110%;
+  bottom: 10px;
+  left: 0;
+}
+
+.bm-lines::after {
+  content: "";
+  width: 80%;
+  top: 10px;
+  left: 0;
+}
+
+.bm-button:hover {
+  filter: brightness(0.9);
+}
+
+.menu-active .bm-lines {
+  background-color: transparent;
+}
+
+.menu-active .bm-lines::before {
+  top: 0;
+  left: 3%;
+  width: 100%;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+.menu-active .bm-lines::after {
+  top: 0;
+  left: 3%;
+  width: 100%;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+
+.bm-navbar {
+  padding-top: 5%;
+  padding-left: 75px;
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #707070;
+  overflow-y: auto;
+  left: -100%;
+  transition: 0.3s;
+}
+
+.menu-active .bm-navbar {
+  left: 0;
+}
+
+.bm-link {
+  padding: 30px;
+  margin-right: 40px;
+  font-family: Roboto;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.bm-link:hover {
+  filter: brightness(0.8);
 }
 
 /* article */
@@ -152,12 +257,12 @@ h1 {
 /* My projects */
 
 .projects-card-collection {
-margin: 0;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-margin-bottom: -30px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
 }
 
 .project-card {
@@ -203,6 +308,7 @@ margin-bottom: -30px;
 }
 
 .year {
+  font-family: Manrope;
   width: 90px;
   margin: auto;
   font-size: 17px;
@@ -211,12 +317,12 @@ margin-bottom: -30px;
 /* fonts */
 @font-face {
   font-family: "Manrope";
-  src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
 }

@@ -8,16 +8,27 @@
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
     />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
   </head>
 
   <body>
     <div class="centered-container">
       <header>
-        <div class="header-container">
+        <div id="burger-menu">
+          <a href="" class="bm-button">
+            <span class="bm-lines"></span>
+          </a>
+          <nav class="bm-navbar">
+            <a href="#about" class="bm-link">About</a>
+            <a href="#skills" class="bm-link">Skills</a>
+            <a href="#code" class="bm-link">Example of Code</a>
+            <a href="#projects" class="bm-link">Projects</a>
+            <a href="#work-experience" class="bm-link">Work Experience</a>
+            <a href="#education" class="bm-link">Education</a>
+            <a href="#english" class="bm-link">English Level</a>
+            <a href="#video" class="bm-link">Video</a>
+          </nav>
+        </div>
+        <div id="about" class="header-container">
           <div class="profile-image header-box">
             <img
               class="profile-picture"
@@ -57,7 +68,7 @@
             <h3>Seeking to leverage my skills at your company.</h3>
           </div>
         </section>
-        <hr />
+        <hr id="skills" />
         <section class="my-skills-section">
           <h2 class="my-skills-title">My Skills:</h2>
 
@@ -91,7 +102,7 @@
             </div>
           </div>
         </section>
-        <hr />
+        <hr id="code" />
         <section class="my-code-section">
           <h2 class="my-code-title">Example of My Code:</h2>
           <div class="my-code-content">
@@ -115,12 +126,15 @@
             }</code></pre>
           </div>
         </section>
-        <hr />
+        <hr id="projects" />
         <section class="my-projects-section">
           <h2 class="my-projects-title">My projects:</h2>
           <div class="projects-card-collection">
             <div class="project-card">
-              <a href="https://peaceful-caverns-23939.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://peaceful-caverns-23939.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img
                   class="project-image"
                   src="/images/projects/secrets.png"
@@ -128,10 +142,17 @@
               /></a>
               <h5>Secrets</h5>
               <h6>Don`t keep your secrets, share `em anonymously!</h6>
-              <h6 class='stack'>Node.js, Express.js, EJS, HTML, CSS, Bootstrap, Git, Mongoose, MongoDB Atlas Database, Heroku, .env, Hashing + Salting, Passport.js, Google, Facebook, Cookies</h6>
+              <h6 class="stack">
+                Node.js, Express.js, EJS, HTML, CSS, Bootstrap, Git, Mongoose,
+                MongoDB Atlas Database, Heroku, .env, Hashing + Salting,
+                Passport.js, Google, Facebook, Cookies
+              </h6>
             </div>
             <div class="project-card">
-              <a href="https://exy63.github.io/whack-a-mole/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://exy63.github.io/whack-a-mole/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img
                   class="project-image"
                   src="images/projects/whack-a-mole.png"
@@ -139,10 +160,13 @@
               /></a>
               <h5>Whack-a-Mole</h5>
               <h6>Deal with the moles!</h6>
-              <h6 class='stack'>HTML, CSS, JavaScript, Git</h6>
+              <h6 class="stack">HTML, CSS, JavaScript, Git</h6>
             </div>
             <div class="project-card">
-              <a href="https://exy63.github.io/TinDog/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://exy63.github.io/TinDog/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img
                   class="project-image"
                   src="/images/projects/tindog.png"
@@ -150,11 +174,14 @@
               /></a>
               <h5>TinDog</h5>
               <h6>Meet new and interesting dogs nearby!</h6>
-              <h6 class='stack'>HTML, CSS, Bootstrap, JavaScript, Git</h6>
-
+              <h6 class="stack">HTML, CSS, Bootstrap, JavaScript, Git</h6>
             </div>
             <div class="project-card">
-              <a href="https://exy63.github.io/TheSimonGame/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://exy63.github.io/TheSimonGame/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   class="project-image"
                   src="/images/projects/simongame.png"
@@ -162,10 +189,13 @@
               /></a>
               <h5>Simon Game</h5>
               <h6>Boost your memory!</h6>
-              <h6 class='stack'>HTML, CSS, JavaScript, Git</h6>
+              <h6 class="stack">HTML, CSS, JavaScript, Git</h6>
             </div>
             <div class="project-card">
-              <a href="https://quiet-springs-09055.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://quiet-springs-09055.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img
                   class="project-image"
                   src="images/projects/todo.png"
@@ -173,10 +203,16 @@
               /></a>
               <h5>To-Do List</h5>
               <h6>All your plans are here!</h6>
-              <h6 class='stack'>Node.js, Express.js, EJS, HTML, CSS, Git, Mongoose, MongoDB Atlas Database, Heroku.</h6>
+              <h6 class="stack">
+                Node.js, Express.js, EJS, HTML, CSS, Git, Mongoose, MongoDB
+                Atlas Database, Heroku.
+              </h6>
             </div>
             <div class="project-card">
-              <a href="https://exy63.github.io/DrumKit/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://exy63.github.io/DrumKit/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img
                   class="project-image"
                   src="/images/projects/drumkit.png"
@@ -184,12 +220,11 @@
               /></a>
               <h5>DrumKit</h5>
               <h6>Be the best drummer!</h6>
-              <h6 class='stack'>HTML, CSS, JavaScript, Git</h6>
-
+              <h6 class="stack">HTML, CSS, JavaScript, Git</h6>
             </div>
           </div>
         </section>
-        <hr />
+        <hr id="work-experience" />
         <section class="work-experience-section">
           <h2 class="work-experience-title">Work Experience:</h2>
           <div class="work-experience-content div-with-table">
@@ -217,7 +252,7 @@
             </table>
           </div>
         </section>
-        <hr />
+        <hr id="education" />
         <section class="education-section">
           <h2 class="education-title">Education:</h2>
           <div class="education-content div-with-table">
@@ -250,7 +285,7 @@
             </table>
           </div>
         </section>
-        <hr />
+        <hr id="english" />
         <section class="english-level-section">
           <h2 class="english-level-title">English Level:</h2>
           <div class="english-level-content">
@@ -270,7 +305,11 @@
       <footer>
         <div class="footer-container">
           <div class="footer-block">
-            <a href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://rs.school/js/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="rs-school-logo"
                 src="images/rs_school_js.svg"
@@ -282,7 +321,11 @@
           </div>
           <p class="year">© <time>2021</time></p>
           <div class="footer-block">
-            <a href="https://github.com/Exy63" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Exy63"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="github-logo"
                 src="images/github-logo.png"
@@ -297,3 +340,8 @@
     </div>
   </body>
 </html>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+<script src="index.js"></script>
