@@ -1,0 +1,328 @@
+/* global */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #eaf6f6;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.centered-container {
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Manrope;
+}
+
+p,
+li,
+th,
+td {
+  font-family: Roboto;
+}
+
+h2 {
+  font-size: 1.7vw;
+  margin-bottom: 30px;
+  color: #66bfbf;
+}
+
+h5 {
+  margin-bottom: 1%;
+}
+
+h6 {
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+hr {
+  width: 5%;
+  margin: 50px auto;
+  border-style: dotted none none;
+  border-color: #707070;
+  border-width: 5px;
+}
+
+pre {
+  margin-top: -15px;
+}
+
+th {
+  text-align: center;
+}
+
+table {
+  width: 1000px;
+  margin-top: -25px;
+  border-spacing: 35px;
+}
+
+.div-with-table {
+  width: 1000px;
+  margin: auto;
+}
+
+#code {
+  background-color: #eaf6f6;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+/* header */
+
+.header-container {
+  height: 230px;
+  background-color: #66bfbf;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.header-box {
+  display: inline-block;
+  width: 32%;
+}
+
+.profile-picture {
+  margin-top: 17px;
+}
+
+.name-and-bio {
+  text-align: center;
+}
+
+.contact-info {
+  line-height: 10px;
+  text-align: right;
+}
+
+.contact-info li {
+  font-family: Manrope;
+}
+
+/* burger menu */
+
+.bm-button {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  top: 75px;
+  left: 2%;
+  z-index: 5;
+  border-radius: 50%;
+  background-color: #707070;
+}
+
+.bm-lines,
+.bm-lines::after,
+.bm-lines::before {
+  position: absolute;
+  width: 46%;
+  height: 4px;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.bm-lines {
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.bm-lines::before {
+  content: "";
+  width: 110%;
+  bottom: 10px;
+  left: 0;
+}
+
+.bm-lines::after {
+  content: "";
+  width: 80%;
+  top: 10px;
+  left: 0;
+}
+
+.bm-button:hover {
+  filter: brightness(0.9);
+}
+
+.menu-active .bm-lines {
+  background-color: transparent;
+}
+
+.menu-active .bm-lines::before {
+  top: 0;
+  left: 3%;
+  width: 100%;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+.menu-active .bm-lines::after {
+  top: 0;
+  left: 3%;
+  width: 100%;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+
+.bm-navbar {
+  padding-top: 5%;
+  padding-left: 75px;
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #707070;
+  overflow-y: auto;
+  left: -100%;
+  transition: 0.3s;
+}
+
+.menu-active .bm-navbar {
+  left: 0;
+}
+
+.bm-link {
+  padding: 30px;
+  margin-right: 40px;
+  font-family: Roboto;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.bm-link:hover {
+  filter: brightness(0.8);
+}
+
+/* article */
+
+h1 {
+  font-size: 50px;
+}
+
+/* about me */
+
+.about-me-section {
+  margin-top: 40px;
+}
+
+.about-me-content {
+  line-height: 15px;
+  font-size: 1.2vw;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pro-decoration {
+  text-decoration: underline;
+}
+
+/* my skills */
+
+.skills-1,
+.skills-2,
+.skills-3 {
+  display: inline-block;
+  margin-right: 30px;
+  width: 150px;
+}
+
+.skill {
+  margin-top: 7px;
+}
+
+/* example of my code */
+
+.my-code-content {
+  width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+/* My projects */
+
+.projects-card-collection {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+}
+
+.project-card {
+  width: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  min-height: 300px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.stack {
+  color: #707070;
+}
+
+/* english level */
+
+.english-level-content {
+  line-height: 15px;
+  font-size: 1.2vw;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+}
+
+/* footer */
+
+.footer-container {
+  height: 133px;
+  margin-top: 45px;
+  background-color: #66bfbf;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  display: flex;
+}
+
+.footer-block {
+  max-width: 300px;
+  margin: auto;
+}
+
+.year {
+  font-family: Manrope;
+  width: 90px;
+  margin: auto;
+  font-size: 17px;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
