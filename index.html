@@ -2,89 +2,129 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>CV | Ilya Prikazchikov</title>
+    <title>Ilya Prikazchikov | Full-Stack Developer</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"
+      async
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="index.js" async></script>
   </head>
 
   <body>
-    <header>
-      <div class="header-container">
-        <div class="profile-image header-box">
-          <img
-            class="profile-picture"
-            src="images/Ilya.png"
-            alt="Ilya's profile picture"
-          />
+    <div class="centered-container">
+      <header>
+        <div id="burger-menu">
+          <a href="" class="bm-button">
+            <span class="bm-lines"></span>
+          </a>
+          <nav class="bm-navbar">
+            <a href="#about" class="bm-link">About</a>
+            <a href="#skills" class="bm-link">Skills</a>
+            <a href="#code" class="bm-link">Example of Code</a>
+            <a href="#projects" class="bm-link">Projects</a>
+            <a href="#work-experience" class="bm-link">Work Experience</a>
+            <a href="#education" class="bm-link">Education</a>
+            <a href="#english" class="bm-link">English Level</a>
+            <a href="#video" class="bm-link">Video</a>
+          </nav>
         </div>
-        <div class="name-and-bio header-box">
-          <h1 class="name">Ilya Prikazchikov</h1>
-          <p class="bio">
-            <em> The <strong>Rising Star</strong> of Web Development</em>
-          </p>
+        <div id="about" class="header-container">
+          <div class="profile-image header-box">
+            <img
+              class="profile-picture"
+              src="images/Ilya.png"
+              alt="Ilya's profile picture"
+            />
+          </div>
+          <div class="name-and-bio header-box">
+            <h1 class="name">Ilya Prikazchikov</h1>
+            <h4 class="bio">
+              <em>Full-Stack Developer </em>
+            </h4>
+          </div>
+          <div class="contact-info header-box">
+            <ul>
+              <li>Contact info:</li>
+              <li><p>email: ilyaprikaz@gmail.com</p></li>
+              <li><p>telegram: @ilyaprikazchikov</p></li>
+            </ul>
+          </div>
         </div>
-        <div class="contact-info header-box">
-          <ul>
-            <h3>Contact info:</h3>
-            <li><p>email: ilyaprikaz@gmail.com</p></li>
-            <li><p>telegram: @ilyaprikazchikov</p></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main>
-      <article>
-        <h1 class="article-name">⭐ CV ⭐</h1>
+      </header>
+      <main>
         <section class="about-me-section">
           <h2 class="about-me-title">About Me:</h2>
           <div class="about-me-content">
             <p>
-              I'm the <strong class="pro-decoration">pro</strong>grammer you're
-              looking for!
+              Able to work under multi-tasking conditions IT specialist with
+              high analytical skills,
             </p>
+            <p>which allow to work effectively with large amounts of data,</p>
             <p>
-              My goal is to become a <em>Gold Star of Web-Development</em> and
-              I'm really focused on it!
+              quickly find solutions to complex problems and achieve impressive
+              results.
             </p>
-            <p>
-              So if one day you come across a web-site or an app that works and
-              looks perfectly you can be sure it was made by
-              <strong>me!</strong>
-            </p>
+
+            <h3>Seeking to leverage my skills at your company.</h3>
           </div>
         </section>
-        <hr />
+        <hr id="skills" />
         <section class="my-skills-section">
-         
-            <h2 class="my-skills-title">My Skills:</h2>
-            
-            <div class="my-skills-content">
-              <ul></ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>Git</li>
-              <li>SQL</li>
-            </ul>
+          <h2 class="my-skills-title">My Skills:</h2>
+
+          <div class="my-skills-content">
+            <div class="skills-1">
+              <ul>
+                <li class="skill">JavaScript</li>
+                <li class="skill">TypeScript</li>
+                <li class="skill">React.js</li>
+                <li class="skill">Node.js</li>
+                <li class="skill">Express.js</li>
+              </ul>
             </div>
-          
+            <div class="skills-2">
+              <ul>
+                <li class="skill">SQL</li>
+                <li class="skill">MySQL</li>
+                <li class="skill">NoSQL</li>
+                <li class="skill">MongoDB</li>
+                <li class="skill">Knex.js</li>
+              </ul>
+            </div>
+            <div class="skills-3">
+              <ul>
+                <li class="skill">OOP</li>
+                <li class="skill">RESTful APIs</li>
+                <li class="skill">Git</li>
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+              </ul>
+            </div>
+          </div>
         </section>
-        <hr />
+        <hr id="code" />
         <section class="my-code-section">
           <h2 class="my-code-title">Example of My Code:</h2>
           <div class="my-code-content">
-            <pre><code>
-            public async getImgByProductID(idProduct: number): Promise &lt;string[]&gt; {
+            <pre><code class='typescript'>
+            public async getImgByProductID(idProduct: number): Promise&lt;string[]&gt; {
                 let asImage: string[] = null;
                 try {
-                    const avImage = await this.db(${ItemE.NAME})
-                        .leftJoin(`${S3ItemImgE.NAME}`, `${ItemE.NAME}.item_id`, `${S3ItemImgE.NAME}.item_id`)
-                        .leftJoin(`${S3ItemFileE.NAME}`, `${S3ItemImgE.NAME}.s3_item_file_id`, `${S3ItemFileE.NAME}.id`)
-                        .where(`${ItemE.NAME}.product_id`, idProduct)
-                        .whereNotNull(`${S3ItemFileE.NAME}.source_url`)
-                        .distinct({ url: `${S3ItemFileE.NAME}.source_url` });
+                    const avImage = await this.db({i: ItemE.NAME})
+                        .leftJoin({sii: S3ItemImgE.NAME}, 'i.item_id', 'sii.item_id')
+                        .leftJoin({sif: S3ItemFileE.NAME}, 'sii.s3_item_file_id', 'sif.id')
+                        .where('i.product_id', idProduct)
+                        .andWhereNotNull('sif.source_url')
+                        .distinct({ url: 'sif.source_url' });
+
                     // Array of Objects => Array of Strings
                     asImage = avImage.map((el) => String(el.url));
                 } catch (e) {
@@ -94,7 +134,105 @@
             }</code></pre>
           </div>
         </section>
-        <hr />
+        <hr id="projects" />
+        <section class="my-projects-section">
+          <h2 class="my-projects-title">My projects:</h2>
+          <div class="projects-card-collection">
+            <div class="project-card">
+              <a
+                href="https://peaceful-caverns-23939.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="project-image"
+                  src="/images/projects/secrets.png"
+                  alt=""
+              /></a>
+              <h5>Secrets</h5>
+              <h6>Don`t keep your secrets, share `em anonymously!</h6>
+              <h6 class="stack">
+                Node.js, Express.js, EJS, HTML, CSS, Bootstrap, Git, Mongoose,
+                MongoDB Atlas Database, Heroku, .env, Hashing + Salting,
+                Passport.js, Google, Facebook, Cookies
+              </h6>
+            </div>
+            <div class="project-card">
+              <a
+                href="https://exy63.github.io/whack-a-mole/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="project-image"
+                  src="images/projects/whack-a-mole.png"
+                  alt=""
+              /></a>
+              <h5>Whack-a-Mole</h5>
+              <h6>Deal with the moles!</h6>
+              <h6 class="stack">HTML, CSS, JavaScript, Git</h6>
+            </div>
+            <div class="project-card">
+              <a
+                href="https://exy63.github.io/TinDog/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="project-image"
+                  src="/images/projects/tindog.png"
+                  alt=""
+              /></a>
+              <h5>TinDog</h5>
+              <h6>Meet new and interesting dogs nearby!</h6>
+              <h6 class="stack">HTML, CSS, Bootstrap, JavaScript, Git</h6>
+            </div>
+            <div class="project-card">
+              <a
+                href="https://exy63.github.io/TheSimonGame/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="project-image"
+                  src="/images/projects/simongame.png"
+                  alt=""
+              /></a>
+              <h5>Simon Game</h5>
+              <h6>Boost your memory!</h6>
+              <h6 class="stack">HTML, CSS, JavaScript, Git</h6>
+            </div>
+            <div class="project-card">
+              <a
+                href="https://quiet-springs-09055.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="project-image"
+                  src="images/projects/todo.png"
+                  alt=""
+              /></a>
+              <h5>To-Do List</h5>
+              <h6>All your plans are here!</h6>
+              <h6 class="stack">
+                Node.js, Express.js, EJS, HTML, CSS, Git, Mongoose, MongoDB
+                Atlas Database, Heroku.
+              </h6>
+            </div>
+            <div class="project-card">
+              <a
+                href="https://exy63.github.io/DrumKit/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="project-image"
+                  src="/images/projects/drumkit.png"
+                  alt=""
+              /></a>
+              <h5>DrumKit</h5>
+              <h6>Be the best drummer!</h6>
+              <h6 class="stack">HTML, CSS, JavaScript, Git</h6>
+            </div>
+          </div>
+        </section>
+        <hr id="work-experience" />
         <section class="work-experience-section">
           <h2 class="work-experience-title">Work Experience:</h2>
           <div class="work-experience-content div-with-table">
@@ -105,15 +243,13 @@
                 <th>PERIOD:</th>
               </tr>
               <tr>
-                <td>Back-End Web Developer</td>
-                <td>LLC "Nika", Russia</td>
-                <td>May 2021 - Now</td>
+                <td>Back-End Developer</td>
+                <td>NeoSoft LLC, Russia</td>
+                <td>May 2021 - Current</td>
               </tr>
               <tr>
                 <td>Court Clerk</td>
-                <td>
-                  District Court of The Industrial District of Samara, Russia
-                </td>
+                <td>Industrial District Court of Samara, Russia</td>
                 <td>August 2020 - January 2021</td>
               </tr>
               <tr>
@@ -124,7 +260,7 @@
             </table>
           </div>
         </section>
-        <hr />
+        <hr id="education" />
         <section class="education-section">
           <h2 class="education-title">Education:</h2>
           <div class="education-content div-with-table">
@@ -136,8 +272,8 @@
               </tr>
               <tr>
                 <td>Front-End Web Development</td>
-                <td>Rolling Scopes School</td>
-                <td>July 2021 - Now</td>
+                <td>The Rolling Scopes School</td>
+                <td>July 2021 - Current</td>
               </tr>
               <tr>
                 <td>Full-Stack Web Development</td>
@@ -150,18 +286,18 @@
                 <td>January 2021 - April 2021</td>
               </tr>
               <tr>
-                <td>Faculty of Law</td>
+                <td>International Law</td>
                 <td>Samara University</td>
                 <td>September 2016 - July 2020</td>
               </tr>
             </table>
           </div>
         </section>
-        <hr />
+        <hr id="english" />
         <section class="english-level-section">
           <h2 class="english-level-title">English Level:</h2>
           <div class="english-level-content">
-            <p>I think that my English level is <strong>B2</strong>.</p>
+            <p>I think that my English level is <strong>B2+</strong>.</p>
             <p>
               I took part in "Work & Travel USA", so I lived and worked in the
               USA from May to September 2019.
@@ -173,35 +309,56 @@
             </p>
           </div>
         </section>
-      </article>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-part footer-left">
-          <img
-            class="rs-school-logo"
-            src="images/rs_school_js.svg"
-            alt="rs-school-logo"
-            width="170"
-            height="70"
-          />
-          <a href="https://rs.school/js/">
-            <p>RS School Course</p>
-          </a>
+        <hr id="video" />
+        <section class="video-section">
+          <h2 class="video-title">Video:</h2>
+          <div class="video-content">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/nGio7PSMsz8"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-block">
+            <a
+              href="https://rs.school/js/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="rs-school-logo"
+                src="images/rs_school_js.svg"
+                alt="rs-school-logo"
+                width="170"
+                height="70"
+              />
+            </a>
+          </div>
+          <p class="year">© <time>2021</time></p>
+          <div class="footer-block">
+            <a
+              href="https://github.com/Exy63"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="github-logo"
+                src="images/github-logo.png"
+                alt="me on github"
+                width="190"
+                height="70"
+              />
+            </a>
+          </div>
         </div>
-        <div class="footer-part footer-right">
-          <a href="https://github.com/Exy63">
-            <img
-              class="github-logo"
-              src="images/github-logo.png"
-              alt="me on github"
-              width="190"
-              height="70"
-            />
-          </a>
-          <p>2021</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
